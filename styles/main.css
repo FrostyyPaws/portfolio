@@ -7,7 +7,7 @@ html{
     
 }
 body{ 
-    height: 100vh;
+    min-height: 100vh;
     border-color: yellow;
     border-width: 4px;
     display: flex;
