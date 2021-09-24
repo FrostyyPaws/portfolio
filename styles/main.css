@@ -3,13 +3,10 @@
     padding: 0;
     border: 1px solid black;
 }
-html{ 
-    
-}
+
 body{ 
     height: 100vh;
     border-color: yellow;
-    border-width: 4px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,27 +18,31 @@ body{
 }
 .content{ 
     border-color: red;
-    border-width: 3px;
     flex-grow: 1;
     display: flex;
     min-height: 350px;
-    
 }
 .sidebar{ 
+    transition: 280ms;
+    max-width: 200px;
+    min-width: 30px;
+    flex-grow: 1;
+    flex-shrink: 5;
     border-color: blue;
-    min-width: 45px;
+    align-items: stretch;
 }
 .sidebar p{ 
-    text-align: center;
+    flex-grow: 1;
     height: 17px;
     overflow: hidden;
-    padding-right: 20px;
-    padding-left: 2px;
+    padding: 0 5px;
+    text-align: center;
 }
+
 .cards{ 
     overflow-y: auto;
     flex-grow: 10;
-    border-width: 5px;
+    flex-shrink: 0;
     border-color: rgb(77, 131, 77);
     /*
     display: flex;
@@ -52,10 +53,11 @@ body{
     */
 }
 .card{ 
+    transition: 280ms;
     border-radius: 6px;
     margin: 20px auto;
     height: 350px;
-    min-width: 400px;
+    min-width: 680px;
     width: 80%;
     max-width: 1000px;
 }
@@ -68,4 +70,21 @@ body{
     border-color:aquamarine;
     min-height: 30px;
     display:none; /*want this here if i need it later, but for now don't need it*/
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .sidebar{ 
+        flex-grow: 1;
+        transition: 280ms;
+        max-width: 70px;
+        min-width: 50px;
+    }
+    .card{ 
+        transition: 280ms;
+        min-width: 350px;
+        max-width: 500px;
+    }
+    
 }
