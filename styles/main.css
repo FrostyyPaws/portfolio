@@ -63,9 +63,14 @@ body {
 .card img{ 
     width: 100%;
 }
+/*
 .card:hover{ 
     transition: 280ms;
+    transform: scale(1.03);
+    border-width: 2px;
+    opacity: 1;
 }
+*/
 
 .footer{ 
     flex-grow: 0;
