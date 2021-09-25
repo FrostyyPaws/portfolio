@@ -1,10 +1,9 @@
 *{ 
     margin: 0;
     padding: 0;
-    border: 1px solid black;
 }
 
-body{ 
+body { 
     height: 100vh;
     border-color: yellow;
     display: flex;
@@ -13,8 +12,10 @@ body{
     overflow: hidden;
 }
 .header{ 
-    min-height: 90px;
+    min-height: 75px;
     flex-grow: 0;
+    background-color: rgb(45, 52, 54);
+    color: white;
 }
 .content{ 
     border-color: red;
@@ -28,41 +29,42 @@ body{
     min-width: 30px;
     flex-grow: 1;
     flex-shrink: 5;
-    border-color: blue;
     align-items: stretch;
+    background-color: rgb(67, 77, 80);
 }
 .sidebar p{ 
+    color: white;
     flex-grow: 1;
     height: 17px;
     overflow: hidden;
     padding: 0 5px;
     text-align: center;
+    margin: 15px 5px;
 }
 
 .cards{ 
     overflow-y: auto;
     flex-grow: 10;
     flex-shrink: 0;
-    border-color: rgb(77, 131, 77);
-    /*
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    */
+    background-color: rgb(206, 236, 229);
 }
-.card{ 
+.card{     
+    background-color: white;
     transition: 280ms;
+    border: 1px solid rgb(213, 121, 236);
     border-radius: 6px;
     margin: 20px auto;
     height: 350px;
     min-width: 680px;
     width: 80%;
     max-width: 1000px;
+    cursor: pointer;
 }
 .card img{ 
     width: 100%;
+}
+.card:hover{ 
+    transition: 280ms;
 }
 
 .footer{ 
