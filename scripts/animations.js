@@ -10,6 +10,9 @@ function unHighlight(classString) {
         `;
         e.style.opacity = 1;
         e.style.transform = `scale(1)`
+        if (e.getElementsByTagName('video').length > 0){
+            e.getElementsByTagName('video')[0].pause()
+        }
     })
 }
 
@@ -25,9 +28,15 @@ function highlight(element, classString = "") {
         if (e == element) {
             e.style.opacity = 1;
             e.style.transform = `scale(${hightlightScale})`
+            if (e.getElementsByTagName('video').length > 0){
+                e.getElementsByTagName('video')[0].play()
+            }
         } else {
-            e.style.opacity = 0.4;
+            e.style.opacity = 0.3;
             e.style.transform = `scale(1)`
+            if (e.getElementsByTagName('video').length > 0){
+                e.getElementsByTagName('video')[0].pause()
+            }
         }
     })
 }
