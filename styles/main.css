@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Urbanist:wght@400;500;600;700&display=swap');
 *{ 
     margin: 0;
     padding: 0;
@@ -51,23 +51,24 @@ body {
     gap: 60px;
 }
 .sidebar p{ 
-    color: white;
+    color: rgb(235, 235, 252);
     flex-grow: 1;
     overflow: hidden;
     padding: 0 5px;
     text-align: center;
 }
-.name{ 
-    font-size: 72px;
+.sidebar .name{ 
+    font-size: 74px;
     margin-top: 5px;
     text-align: left;
-    color: white;
 }
-.last-name{ 
-    font-size: 33px;
+.sidebar .name .last-name{ 
+    font-size: 31px;
+    font-family: Raleway;
+    color: rgb(162, 162, 253);
 }
 .name p{ 
-    font-family: Raleway;
+    font-family: Urbanist;
 }
 .contact{ 
     width: 100%;
@@ -88,19 +89,28 @@ body {
     font-size: 25px;
     gap: 20px;
 }
+.contact .icons li{ 
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.contact .icons svg{ 
+    width: 30;
+    height: 30;
+}
 
 .cards{ 
     overflow-y: auto;
     flex-grow: 10;
     flex-shrink: 0;
-    background-color: rgb(209, 225, 235);
+    background-color: rgb(200, 210, 216);
 }
 .card{     
     background-color: white;
     border: 2px solid rgb(230, 214, 163);
     border-radius: 6px;
     margin: 20px auto;
-    height: 350px;
+    height: 380px;
     width: 80%;
     max-width: 1000px;
     cursor: pointer;
@@ -139,10 +149,10 @@ body {
         min-width: 350px;
         max-width: 500px;
     }
-    .name{ 
+    .sidebar .name{ 
         font-size: 28px;
     }
-    .last-name{
+    .sidebar .name .last-name{
         padding-left: -10px;
         font-size: 13px;
     }
