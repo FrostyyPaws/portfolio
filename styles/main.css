@@ -81,7 +81,6 @@ body {
 .name p {
     font-family: Urbanist;
 }
-
 .title-section {
     font-size: 2rem;
     margin-top: -2rem;
@@ -92,16 +91,34 @@ body {
     width:100%;
     gap:2rem;
 }
-
+.title-section p {
+    font-size: 2.5rem
+}
 .more-info {
-    text-align: center;
     background-color: white;
     transition: all 400ms ease-in-out;
-    font-size: 1.4rem;
     margin-left:-15rem;
     width: 200px;
     height:100px;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.title-section .more-info p{ 
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(47, 47, 75);
+}
+.title-section .more-info .item{ 
+    display: flex;
+}
+.title-section .more-info img{ 
+    margin-left: 5px;
+    height: 24px;
+    display: inline;
 }
 
 .title-section:hover .more-info {
@@ -113,10 +130,6 @@ body {
     transition: transform 400ms ease-in-out;
 }
 
-.title-section p {
-    display: block;
-    font-size: 2.5rem
-}
 .title{ 
     transition: transform 400ms ease-in-out;
     width: 100%;
@@ -197,7 +210,7 @@ body {
 
 .card {
     background-color: white;
-    border: 3px solid rgb(230, 214, 163);
+    border: 3px solid rgb(177, 164, 124);
     border-radius: 6px;
     margin: 20px auto;
     height: 380px;
