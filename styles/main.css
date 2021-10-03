@@ -276,4 +276,22 @@ svg {
     .contact .label {
         display: none;
     }
+    .title{ 
+        display: block;
+    }
+    #full, #stack, #web, #dev{ 
+        margin: 0;
+    }
+    #full{ 
+        font-size: 1.8rem;
+    }
+    #stack{ 
+        font-size: 1.1rem;
+    }
+    #web{
+        font-size: 1.3rem;
+    }
+    #dev{ 
+        font-size: 1.6rem;
+    }
 }
