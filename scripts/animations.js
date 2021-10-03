@@ -1,53 +1,59 @@
 const cards = document.getElementsByClassName('card');
-const highlightTransitionSpeedMs = 500
-const hightlightScale = 1.03
-
+/*
+const contactIcons = document.getElementsByClassName()
+const contactTexts = document.getElementsByClassName()
+*/
+const HIGHLIGHT_TRANSITION_SPEED_MS = 500;
+const HIGHLIGHT_SCALE = 1.03;
+const NON_HIGHLIGHTED_OPACITY = 0.3;
 function unHighlight(classString) {
-    Array.from(document.getElementsByClassName(classString)).map(e => {
+    Array.from(document.getElementsByClassName(classString)).forEach(e => {
         e.style.transition = `
-            opacity ${highlightTransitionSpeedMs}ms,
-            transform ${highlightTransitionSpeedMs}ms    
+            opacity ${HIGHLIGHT_TRANSITION_SPEED_MS}ms,
+            transform ${HIGHLIGHT_TRANSITION_SPEED_MS}ms    
         `;
         e.style.opacity = 1;
-        e.style.transform = `scale(1)`
-        if (e.getElementsByTagName('video').length > 0){
-            e.getElementsByTagName('video')[0].pause()
+        e.style.transform = `scale(1)`;
+        if(e.getElementsByTagName('video').length > 0){
+            e.getElementsByTagName('video')[0].pause();
         }
     })
 }
-
 function highlight(element, classString = "") {
-    let classEles
-    if (classString != "") { classEles = document.getElementsByClassName(classString) }
-    else { classEles = document.getElementsByClassName(element.classList) }
-    Array.from(classEles).map(e => {
+    if(classString == ""){
+        var classEles = document.getElementsByClassName(element.classList); 
+    } else {
+        var classEles = document.getElementsByClassName(classString)
+    };
+    Array.from(classEles).forEach(e => {
         e.style.transition = `
-            opacity ${highlightTransitionSpeedMs}ms ease-in-out,
-            transform ${highlightTransitionSpeedMs}ms ease-in-out   
-        `
+            opacity ${HIGHLIGHT_TRANSITION_SPEED_MS}ms ease-in-out,
+            transform ${HIGHLIGHT_TRANSITION_SPEED_MS}ms ease-in-out   
+        `;
         if (e == element) {
             e.style.opacity = 1;
-            e.style.transform = `scale(${hightlightScale})`
-            if (e.getElementsByTagName('video').length > 0){
-                e.getElementsByTagName('video')[0].play()
-            }
+            e.style.transform = `scale(${HIGHLIGHT_SCALE})`
+            e.getElementsByTagName('video').length > 0 && e.getElementsByTagName('video')[0].play();
         } else {
-            e.style.opacity = 0.3;
-            e.style.transform = `scale(1)`
-            if (e.getElementsByTagName('video').length > 0){
-                e.getElementsByTagName('video')[0].pause()
+            e.style.opacity = NON_HIGHLIGHTED_OPACITY;
+            e.style.transform = `scale(1)`;
+            if(e.getElementsByTagName('video').length > 0) {
+                e.getElementsByTagName('video')[0].pause();
             }
         }
     })
 }
-
-
 for (let i in cards) {
     let c = cards[i];
     c.onmouseover = () => {
-        highlight(c)
-    }
+        highlight(c);
+    ;}
     c.onmouseout = () => {
-        unHighlight(c.classList)
-    }
-}
+        unHighlight(c.classList);
+    };
+};
+/*
+Array.from(document.getElementsByClassName()).map(e => { 
+
+})
+*/
