@@ -126,9 +126,11 @@ body {
     transition: transform 400ms ease-in-out;
 }
 .title-section:hover .title{ 
-    transform: translateX(-5rem);
-    transition: transform 400ms ease-in-out;
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+   
 }
+
 
 .title{ 
     transition: transform 400ms ease-in-out;
@@ -142,17 +144,20 @@ body {
     justify-content: center;
 }
 #stack {
+    margin-top: -0.8rem;
     font-size: 1.5rem;
-    margin-top: -0.6rem;
 }
 #web {
+    margin-top:3px;
     font-size: 1.9rem;
     color: rgb(162, 162, 253);
 }
 #dev {
+    margin-top: -0.6rem;
+    margin-left: -0.4rem;
+    width: 100%;
     font-size: 2.3rem;
     color: rgb(162, 162, 253);
-    margin-top:-0.6rem;
 }
 
 .contact {
@@ -292,6 +297,8 @@ svg {
         font-size: 1.3rem;
     }
     #dev{ 
+        margin-left: -0.3rem;
+        margin-top: -0.2rem;
         font-size: 1.6rem;
     }
 }
