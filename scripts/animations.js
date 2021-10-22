@@ -1,8 +1,4 @@
 const cards = document.getElementsByClassName('card');
-/*
-const contactIcons = document.getElementsByClassName()
-const contactTexts = document.getElementsByClassName()
-*/
 const HIGHLIGHT_TRANSITION_SPEED_MS = 500;
 const HIGHLIGHT_SCALE = 1.03;
 const NON_HIGHLIGHTED_OPACITY = 0.3;
@@ -14,9 +10,7 @@ function unHighlight(classString) {
         `;
         e.style.opacity = 1;
         e.style.transform = `scale(1)`;
-        if(e.getElementsByTagName('video').length > 0){
-            e.getElementsByTagName('video')[0].pause();
-        }
+        e.getElementsByTagName('video').length > 0 && e.getElementsByTagName('video')[0].pause();
     })
 }
 function highlight(element, classString = "") {
@@ -52,8 +46,3 @@ for (let i in cards) {
         unHighlight(c.classList);
     };
 };
-/*
-Array.from(document.getElementsByClassName()).map(e => { 
-
-})
-*/
