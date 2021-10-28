@@ -17,9 +17,7 @@ body {
 a {
     text-decoration: none;
 }
-h2 { 
-    font-weight: 500;
-}
+
 .header {
     min-height: 40px;
     flex-grow: 0;
@@ -240,31 +238,41 @@ h2 {
     border-radius: 6px;
     margin: 20px auto;
     height: 380px;
-    width: 80%;
+    width: 85%;
     max-width: 1000px;
-    min-width: 860px;
+    min-width: 920px;
     cursor: pointer;
     overflow: hidden;
     transition: 400ms ease-in-out;
 }
 .card h1 { 
+    font-weight: 500;
+    font-size: 2.15rem;
     text-align: center;
     color: rgb(45, 48, 54);
+    color:white;
     margin-bottom: 0.3rem;
+    font-family: Raleway;
 }
 .card h2{ 
+    margin-left: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
     color: rgb(67, 75, 80);
+    margin-bottom: 0.2rem;
 }
 .card video {
     height: 100%;
-    border-right: 1px solid black;
+    border-right: 1px solid rgb(67, 75, 80);
 }
 
-.card .project-info {
-    padding: 10px;
-}
 .card .project-info ul{  
     margin-left: 2rem;
+    margin-bottom: 0.6rem;
+}
+.card .project-info .title{
+    width: 100%;
+    background-color: rgb(67, 75, 80);
 }
 .footer {
     flex-grow: 0;
@@ -338,7 +346,7 @@ svg {
     .card video {
         width: 100%;
         height: inherit;
-        border-bottom: 1px solid black;
+        
     }
     .card .project-info {
         height: 200%;
