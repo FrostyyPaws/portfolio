@@ -1,5 +1,4 @@
 By design, this is built purely in vanilla HTML/CSS/JS with no libraries or external dependencies. 
-(Also by design, all code not minified to leave it human readable for inspection)
 
 
 __The point of this whole thing?__
