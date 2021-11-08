@@ -302,7 +302,7 @@ a {
     color: white;
 }
 .card .project-info .live-link a::before{  
-    content:url('/images/link.png');
+    content:url('/images/link-icon.png');
     width: 10px;
     position: relative;
     left: -10px;
