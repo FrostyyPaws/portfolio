@@ -19,6 +19,10 @@ a {
     color: none;
 }
 
+svg {
+    fill: rgb(162, 162, 253);
+}
+
 .header {
     min-height: 40px;
     flex-grow: 0;
@@ -317,10 +321,6 @@ a {
     border-color: aquamarine;
     min-height: 30px;
     display: none;
-}
-
-svg {
-    fill: rgb(162, 162, 253);
 }
 
 @media only screen and (max-width: 1190px) {
