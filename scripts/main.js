@@ -1,3 +1,5 @@
+const IMAGE_URL = 'http://kenparsonsportfolio.com/images/ogimage.png'
+const IMAGE_MSG = `%c `
 const CONTACT_STYLING = `
     font-size:20px;
     font-family:verdana,sans-serif;
@@ -11,5 +13,6 @@ const CONTACT_TABLE = {
     "Phone":"248-892-9404", 
     "GitHub":"https://github.com/KenAKAFrosty",
 }
+console.log()
 console.log(CONTACT_MSG,CONTACT_STYLING)
 console.table(CONTACT_TABLE)
