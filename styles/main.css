@@ -231,7 +231,7 @@ svg {
 
 .cards {
     overflow-y: auto;
-    flex-grow: 10;
+    flex-grow: 10; 
     flex-shrink: 0;
     background-color: rgb(200, 210, 216);
 }
@@ -425,10 +425,10 @@ svg {
     }
 }
 
-
 @media only screen and (max-width: 520px){ 
     .card{ 
         width: 49%;
         margin-left: 23px;
     }
 }
+ 
