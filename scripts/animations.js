@@ -1,6 +1,6 @@
 const cards = document.getElementsByClassName('card');
 const HIGHLIGHT_TRANSITION_SPEED_MS = 500;
-const HIGHLIGHT_SCALE = 1.03;
+const HIGHLIGHT_SCALE = 1.02;
 const NON_HIGHLIGHTED_OPACITY = 0.3;
 function unHighlight(classString) {
     Array.from(document.getElementsByClassName(classString)).forEach(e => {

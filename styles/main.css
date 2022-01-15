@@ -316,6 +316,9 @@ svg {
     transition: 210ms ease-in-out;
     color: rgb(47, 47, 75);
 }
+.highlights{
+    padding-right: 6px;
+}
 .footer {
     flex-grow: 0;
     border-color: aquamarine;
@@ -383,8 +386,6 @@ svg {
     }
     .card video {
         width: 100%;
-        height: inherit;
-        
     }
     .card .project-info {
         height: 200%;
@@ -427,8 +428,10 @@ svg {
 
 @media only screen and (max-width: 520px){ 
     .card{ 
-        width: 49%;
-        margin-left: 23px;
+        width: 20%;
+    }
+    .card video{ 
+        height: 155px;
     }
 }
  
