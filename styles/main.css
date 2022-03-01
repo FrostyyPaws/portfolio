@@ -251,9 +251,7 @@ svg {
     transition: 400ms ease-in-out;
     font-size: 1.1rem;
 }
-.card .americas-insured{ 
-    font-size: 0.85rem;
-}
+
 .card h1 { 
     font-weight: 500;
     font-size: 2.15rem;
@@ -286,15 +284,27 @@ svg {
 .card .project-info{  
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+}
+.card .project-info .highlights-container{ 
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 .card .project-info ul{  
     margin-left: 2rem;
     margin-bottom: 0.6rem;
 }
+.card .project-info ul li{  
+    margin-bottom:0.2rem;
+}
 .card .project-info .title{
     width: 100%;
     background-color: rgb(67, 75, 80);
+
 }
 .card .project-info .live-link{
     display: flex;
