@@ -7,7 +7,6 @@
 
 body {
     height: 100vh;
-    border-color: yellow;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,7 +42,6 @@ svg {
 }
 
 .content {
-    border-color: red;
     flex-grow: 1;
     display: flex;
     min-height: 350px;
@@ -239,8 +237,11 @@ svg {
 .card {
     display: flex;
     background-color: white;
-    border: 1px solid rgb(177, 164, 124);
-    border-radius: 4px;
+    border: 4px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0.8px 2px rgba(0,0,0,0.432),
+                0px 2.7px 6.7px rgba(0,0,0,0.248),
+                0px 12px 30px rgba(0,0,0,0.18);
     margin: 15px auto 35px;
     height: 380px;
     width: 85%;
@@ -321,7 +322,12 @@ svg {
     color: rgb(47, 47, 75);
 }
 .highlights{
+    box-shadow: 0px -0.8px 3px rgba(0,0,0,0.132),
+                0px 2.7px 6.7px rgba(0,0,0,0.048),
+                0px 12px 30px rgba(0,0,0,0.08);
+    border-radius: 10px;
     padding-right: 6px;
+    margin: 5px 5px -5px 5px;
 }
 .footer {
     flex-grow: 0;
