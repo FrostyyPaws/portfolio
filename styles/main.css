@@ -134,7 +134,7 @@ svg {
     height: 24px;
     display: inline;
 }
-
+/* 
 .title-section:hover .more-info {
     transform: translateX(15rem);
     transition: transform 400ms ease-in-out;
@@ -143,7 +143,7 @@ svg {
 .title-section:hover .title {
     opacity: 0;
     transition: opacity 400ms ease-in-out;
-}
+} */
 
 .title {
     transition: transform 400ms ease-in-out;
